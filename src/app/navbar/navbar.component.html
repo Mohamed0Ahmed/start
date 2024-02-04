@@ -1,0 +1,49 @@
+<nav
+  class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+  [class]="scrolled ? 'py-2' : 'py-4'"
+>
+  <div class="container">
+    <a class="navbar-brand text-white fs-2 fw-bold" routerLink="home"
+      >START FRAMEWORK
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item px-2">
+          <a
+            class="nav-link text-white px-2 mt-3 mt-md-0 fw-bold"
+            routerLink="about"
+            routerLinkActive=" active rounded-2 "
+            >ABOUT</a
+          >
+        </li>
+        <li class="nav-item px-2">
+          <a
+            class="nav-link text-white px-2 mt-3 mt-md-0 fw-bold"
+            routerLink="portfolio"
+            routerLinkActive=" active rounded-2"
+            >PORTFOLIO</a
+          >
+        </li>
+        <li class="nav-item px-2">
+          <a
+            class="nav-link text-white px-2 mt-3 mt-md-0 fw-bold"
+            routerLink="contact"
+            routerLinkActive=" active rounded-2 "
+            >CONTACT</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

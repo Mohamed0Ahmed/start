@@ -1,0 +1,14 @@
+section{
+    background-color: var(--secondColor);
+    min-height: calc( 100vh - 70px);
+
+}
+img{
+    width: 250px;
+    padding: 20px 0;
+}
+.dash{
+    width: 70px;
+    height: 4px;
+    background-color: white;
+}

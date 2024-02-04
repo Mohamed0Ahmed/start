@@ -1,0 +1,36 @@
+section {
+  min-height: calc(100vh - 50px);
+}
+.dash {
+  width: 70px;
+  height: 4px;
+  background-color: black;
+}
+label {
+  color: var(--secondColor);
+}
+.top {
+  top: 40px;
+  transition: 0.5s;
+}
+label {
+  transition: top 0.5s;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.btn-success {
+  --bs-btn-bg: var(--secondColor);
+  --bs-btn-border-color: var(--secondColor);
+  --bs-btn-hover-bg: var(--secondColor);
+  --bs-btn-hover-border-color: var(--secondColor);
+  --bs-btn-active-bg: var(--secondColor);
+  --bs-btn-active-border-color: var(--secondColor);
+  --bs-btn-disabled-bg: var(--secondColor);
+  --bs-btn-disabled-border-color: var(--secondColor);
+}
+@media (max-width: 992px) {
+  .form {
+    width: 100% !important;
+  }
+}

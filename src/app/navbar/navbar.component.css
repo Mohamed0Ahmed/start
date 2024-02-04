@@ -1,0 +1,14 @@
+nav {
+  background-color: var(--mainColor) !important;
+  transition: 0.5s;
+  z-index: 999;
+  /* padding: 25px 0; */
+}
+.active {
+  background-color: var(--secondColor) !important;
+  color: white;
+  display: block;
+}
+ul li {
+  display: flex;
+}

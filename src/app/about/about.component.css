@@ -1,0 +1,9 @@
+section {
+  background-color: var(--secondColor);
+  min-height: calc( 100vh - 70px);
+}
+.dash{
+    width: 70px;
+    height: 4px;
+    background-color: white;
+}

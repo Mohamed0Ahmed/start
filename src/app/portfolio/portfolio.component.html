@@ -1,0 +1,68 @@
+<section class="d-flex align-items-center justify-content-center pt-5">
+  <div class="container d-flex flex-column align-items-center pt-5">
+    <h1 class="fw-bold">PORTFOLIO COMPONENT</h1>
+    <div class="d-flex align-items-center">
+      <div class="dash me-3"></div>
+      <i class="fa-solid fa-star text-black me-3"></i>
+      <div class="dash me-3"></div>
+    </div>
+    <div class="row g-5 py-4">
+      <div class="col-md-4" (click)="showImage('./assets/images/poert1.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/poert1.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="showImage('./assets/images/port2.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/port2.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="showImage('./assets/images/port3.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/port3.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="showImage('./assets/images/poert1.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/poert1.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="showImage('./assets/images/port2.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/port2.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" (click)="showImage('./assets/images/port3.png')">
+        <div class="rounded-2 overflow-hidden position-relative">
+          <img src="./assets/images/port3.png" alt="" />
+          <div class="layer d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contain bg-primary bg-opacity-25 d-none"></div>
+  <div
+    class="contain bg-primary bg-opacity-25"
+    *ngIf="userClick"
+    (click)="hideContain($event)"
+  >
+    <img [src]="imgSrc" alt="" />
+  </div>
+</section>

@@ -1,0 +1,41 @@
+section {
+  min-height: calc(100vh - 70px);
+}
+.dash {
+  width: 70px;
+  height: 4px;
+  background-color: black;
+}
+.col-md-4 .rounded-2 .layer {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+.layer i {
+  font-size: 6rem;
+}
+.col-md-4 .rounded-2:hover .layer{
+  opacity: 1;
+}
+.contain{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.contain img{
+  width: 600px;
+}
