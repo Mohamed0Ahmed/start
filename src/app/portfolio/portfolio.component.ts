@@ -3,16 +3,23 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css'],
 })
 export class PortfolioComponent {
   userClick: boolean = false;
-  imgSrc:string='';
+  imgSrc: string = '';
+  imgs: string[] = [
+    './assets/images/poert1.png',
+    './assets/images/port2.png',
+    './assets/images/port3.png',
+    './assets/images/poert1.png',
+    './assets/images/port2.png',
+    './assets/images/port3.png',
+  ];
 
-  showImage(imagePath: string): void {
-
+  showImage(i: number): void {
     this.userClick = true;
-    this.imgSrc = imagePath;
+    this.imgSrc = this.imgs[i];
   }
 
   hideContain(event: Event): void {
@@ -20,5 +27,4 @@ export class PortfolioComponent {
       this.userClick = false;
     }
   }
-  
 }

@@ -7,50 +7,13 @@
       <div class="dash me-3"></div>
     </div>
     <div class="row g-5 py-4">
-      <div class="col-md-4" (click)="showImage('./assets/images/poert1.png')">
+      <div class="col-md-4" *ngFor="let img of imgs; let i = index">
         <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/poert1.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" (click)="showImage('./assets/images/port2.png')">
-        <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/port2.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" (click)="showImage('./assets/images/port3.png')">
-        <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/port3.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" (click)="showImage('./assets/images/poert1.png')">
-        <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/poert1.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" (click)="showImage('./assets/images/port2.png')">
-        <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/port2.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4" (click)="showImage('./assets/images/port3.png')">
-        <div class="rounded-2 overflow-hidden position-relative">
-          <img src="./assets/images/port3.png" alt="" />
-          <div class="layer d-flex align-items-center justify-content-center">
+          <img [src]="img" alt="" />
+          <div
+            class="layer d-flex align-items-center justify-content-center"
+            (click)="showImage(i)"
+          >
             <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
           </div>
         </div>
