@@ -6,16 +6,21 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  {path:"", redirectTo:'home', pathMatch:'full'  ,title:'Home'},
-  {path:'home' , component: HomeComponent ,title:'Home'},
-  {path:'about' , component: AboutComponent ,title:'About'},
-  {path:'contact' , component: ContactComponent ,title:'Contact'},
-  {path:'portfolio' , component: PortfolioComponent, title:'Portfolio' },
-  {path:'**' ,component:HomeComponent,title:'home'},
+  { path: '', redirectTo: 'home', pathMatch: 'full', title: 'Home' },
+  { path: 'home', component: HomeComponent, title: 'Home' },
+  { path: 'about', component: AboutComponent, title: 'About' },
+  { path: 'contact', component: ContactComponent, title: 'Contact' },
+  { path: 'portfolio', component: PortfolioComponent, title: 'Portfolio' },
+  { path: '**', component: HomeComponent, title: 'home' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled',
+      useHash: true,
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
